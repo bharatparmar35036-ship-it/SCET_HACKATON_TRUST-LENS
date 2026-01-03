@@ -1,0 +1,29 @@
+{
+  "name": "TrustLens Live",
+  "description": "Verify claims on any webpage and get a Trust Score.",
+  "version": "1.0",
+  "manifest_version": 3,
+
+  "permissions": [
+    "activeTab",
+    "scripting",
+    "storage",
+    "contextMenus"
+  ],
+
+  "background": {
+    "service_worker": "service-worker.js"
+  },
+
+  "action": {
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "css": ["content.css"]
+    }
+  ]
+}

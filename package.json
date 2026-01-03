@@ -1,0 +1,19 @@
+{
+  "name": "trustlens-backend",
+  "version": "1.0.0",
+  "description": "TrustLens Live backend (safe fallback mode for hackathon)",
+  "type": "module",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}

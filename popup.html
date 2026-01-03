@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>TrustLens Live</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      width: 320px;
+      padding: 12px;
+      margin: 0;
+      background: #ffffff;
+    }
+
+    h3 {
+      margin: 0 0 8px 0;
+      font-size: 18px;
+    }
+
+    #status {
+      font-size: 13px;
+      color: #555;
+      margin-bottom: 10px;
+    }
+
+    /* Score section */
+    #score {
+      font-size: 22px;
+      font-weight: bold;
+      margin: 6px 0;
+    }
+
+    #score-bar {
+      height: 6px;
+      width: 100%;
+      border-radius: 4px;
+      background: #ddd;
+      margin-bottom: 12px;
+    }
+
+    /* Verdict colors */
+    .verified {
+      color: #1b8f2f;
+    }
+
+    .false {
+      color: #c62828;
+    }
+
+    .mixed {
+      color: #ef6c00;
+    }
+
+    /* Details */
+    pre {
+      font-size: 11px;
+      white-space: pre-wrap;
+      background: #f5f5f5;
+      padding: 6px;
+      border-radius: 4px;
+      max-height: 140px;
+      overflow-y: auto;
+      margin-bottom: 10px;
+    }
+
+    /* History */
+    h4 {
+      font-size: 13px;
+      margin: 8px 0 4px 0;
+    }
+
+    ul {
+      padding-left: 16px;
+      margin: 0;
+      max-height: 90px;
+      overflow-y: auto;
+      font-size: 11px;
+    }
+
+    li {
+      margin-bottom: 4px;
+    }
+  </style>
+</head>
+
+<body>
+  <h3>TrustLens Live</h3>
+
+  <div id="status">Select text on a webpage or right-click → Verify</div>
+
+  <div id="score"></div>
+  <div id="score-bar"></div>
+
+  <pre id="details"></pre>
+
+  <h4>Recent Checks</h4>
+  <ul id="history"></ul>
+
+  <script src="popup.js"></script>
+</body>
+</html>
